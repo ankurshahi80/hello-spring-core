@@ -26,13 +26,13 @@
 <!--        </bean>-->
 
     <!-- setter injection bean example  -->
-        <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">
+<!--        <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">-->
     <!--    name = name of variable given by you in your class-->
-            <property name="pokeDao" ref="pokemonDao" />
-        </bean>
+<!--            <property name="pokeDao" ref="pokemonDao" />-->
+<!--        </bean>-->
 
     <!-- autowired attribute -->
     <!--  three ways to do it: byType (setter), byName(setter), and constructor (constructor)-->
-<!--    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl" autowire="byType" />-->
+    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl" autowire="byType" />
 
 </beans>
