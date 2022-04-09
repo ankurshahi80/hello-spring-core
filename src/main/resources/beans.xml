@@ -20,16 +20,16 @@
     <bean name="pokemonDao" class="com.revature.daos.PokemonDaoImpl"/>
 
     <!-- this is where we are manually defining our constructor injection  -->
-        <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">
+<!--        <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">-->
 <!--        index = position in the args of that constructor; ref = what bean is being injected into constructor-->
-            <constructor-arg index="0" ref="pokemonDao"/>
-        </bean>
+<!--            <constructor-arg index="0" ref="pokemonDao"/>-->
+<!--        </bean>-->
 
     <!-- setter injection bean example  -->
-    <!--    <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">-->
+        <bean name="pokemonService" class="com.revature.services.PokemonServiceImpl">
     <!--    name = name of variable given by you in your class-->
-    <!--        <property name="pokeDao" ref="pokemonDao" />-->
-    <!--    </bean>-->
+            <property name="pokeDao" ref="pokemonDao" />
+        </bean>
 
     <!-- autowired attribute -->
     <!--  three ways to do it: byType (setter), byName(setter), and constructor (constructor)-->
