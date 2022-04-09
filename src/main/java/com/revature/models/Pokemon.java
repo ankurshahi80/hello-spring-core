@@ -8,7 +8,6 @@ import lombok.*;
 @Setter
 @ToString
 //@Data combines @Getter, @Setter and @ToString
-@RequiredArgsConstructor
 @EqualsAndHashCode
 public class Pokemon {
     private int id;

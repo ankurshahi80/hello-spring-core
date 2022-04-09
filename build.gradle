@@ -15,6 +15,7 @@ dependencies {
     implementation 'org.springframework:spring-beans:5.3.18' // rollback to 5.3.13, if needed
     implementation 'org.springframework:spring-context:5.3.18' // rollback to 5.3.13, if needed
     compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }
 
 test {
